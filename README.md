@@ -2,6 +2,8 @@
 
 User script for adding actions to tournaments on [Limitless](https://play.limitlesstcg.com/) for specific organizers.
 
+![image](https://github.com/user-attachments/assets/0572faa2-6cce-4dca-821a-9519e894ead4)
+
 # Prerequisites
 
 Install [Tampermonkey](https://www.tampermonkey.net/) extension for your browser.
