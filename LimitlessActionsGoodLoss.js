@@ -221,7 +221,7 @@
                 actionButton.title = action.name;
 
                 actionButton.addEventListener("click", () => {
-                    if (!storageData[action.storageKey][organizer]) {
+                    if (!storageData[action.storageKey][organizer] || storageData[action.storageKey][organizer] === "false") {
                         storageData[action.storageKey][organizer] = true;
                         saveActionData(action, organizer, "true");
                         applyBadgeToOrganizer(organizer, action);
