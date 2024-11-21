@@ -73,35 +73,41 @@
     // Load action information from storage
     const storageData = {};
     const actionsConfig = [
-        {
+         {
             name: "Interested",
             icon: "fa-heart",
             color: "#2E7D4C",
-            storageKey: "interestedOrganizers"
+            storageKey: "LimitlessActions_Interested"
         },
         {
             name: "No Prize",
             icon: "fa-dollar-sign",
             color: "#D55E00",
-            storageKey: "noCashPrizeOrganizers"
+            storageKey: "LimitlessActions_NoCash"
         },
         {
             name: "Hard Time",
             icon: "fa-clock",
             color: "#B23A6D",
-            storageKey: "difficultTimeOrganizers"
+            storageKey: "LimitlessActions_HardTime"
         },
         {
             name: "Special Format",
             icon: "fa-gamepad",
             color: "#6A0DAD",
-            storageKey: "specificFormatOrganizers"
+            storageKey: "LimitlessActions_SpecialFormat"
         },
         {
             name: "Entry Fee",
             icon: "fa-ticket-alt",
             color: "#2C5A83",
-            storageKey: "entryFeeOrganizers"
+            storageKey: "LimitlessActions_EntryFee"
+        },
+        {
+            name: "Private",
+            icon: "fa-lock",
+            color: "#fe37d7",
+            storageKey: "LimitlessActions_Private"
         }
     ];
 
@@ -127,7 +133,7 @@
                 badge.className = "badge";
                 badge.style.backgroundColor = action.color;
                 badge.setAttribute("data-action", action.storageKey);
-                badge.innerHTML = `<i class="fas ${action.icon}"></i> ${action.name}`;
+                badge.innerHTML = `<i class="fas ${action.icon}"></i>`;
 
                 const removeButton = document.createElement("span");
                 removeButton.className = "remove-badge";
@@ -182,6 +188,8 @@
 
             actionsConfig.forEach(action => {
                 const actionButton = document.createElement("button");
+                actionButton.style.backgroundColor = action.color;
+                actionButton.style.width = '32px';
                 actionButton.className = `fas ${action.icon} action-button`;
                 actionButton.title = action.name;
 
