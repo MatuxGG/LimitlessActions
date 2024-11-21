@@ -10,7 +10,7 @@ Install [Tampermonkey](https://www.tampermonkey.net/) extension for your browser
 - [Chrome version](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 - [Firefox version](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
 
-# Usage
+# Installation
 
 In Tampermonkey extension, follow there steps:
 - Click on "Create a new script...".
